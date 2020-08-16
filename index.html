@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <title>Checkout Page</title>
+</head>
+<body>
+    <section class="checkout">
+        <div class="checkout__title">
+            <h1 class="title">Checkout</h1>
+        </div>
+            <div class="checkout__cart">
+                <div class="checkout__list">
+                    <div class="products">
+                        <div class="product__box">
+                            <div class="product__image">
+                                <img src="src/images/photo1.png" alt="">
+                            </div>
+                            <div class="product__infos">
+                                <h4 class="product__title">Vintage Backbag</h4>
+                                <p class="product__price">
+                                    <span class="forsale__price">$54.99</span>
+                                    <span class="current__price">$94.99</span>
+                                </p>
+                                <p class="quantity__block">
+                                    <span class="remove material-icons">remove</span>
+                                    <span class="product__block">1</span>
+                                    <span class="add material-icons">add</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product__box">
+                            <div class="product__image">
+                                <img src="src/images/photo2.png" alt="">
+                            </div>
+                            <div class="product__infos">
+                                <h4 class="product__title">Vintage Backbag</h4>
+                                <p class="product__price">
+                                    <span class="forsale__price">$74.99</span>
+                                    <span class="current__price">$124.99</span>
+                                </p>
+                                <p class="quantity__block">
+                                    <span class="remove material-icons">remove</span>
+                                    <span class="product__block">1</span>
+                                    <span class="add material-icons">add</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__amount">
+                         <p class="product__shipping">
+                             <span class="shipping__title">shipping</span>
+                             <span class="shipping__price">$19</span>
+                         </p>
+                         <p class="total__amount">
+                             <span class="total__title">total</span>
+                             <span class="total__price">$148.99</span>
+                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__form">
+                <form class="form">
+                    <div class="form__group">
+                        <h4 class="form__title">contact information</h4>
+                        <div class="contact__inputs">
+                            <label>E-mail</label>
+                            <p class="input__block">
+                                <i class="material-icons">email</i>
+                                <input type="email" name="email" id="email" required  placeholder="Enter your email..">
+                                
+                            </p>
+                        </div>
+                        <div class="contact__inputs">
+                            <label>Phone</label>
+                            <p class="input__block">
+                                <i class="material-icons">call</i>
+                                <input type="tel" name="phone" id="phone" required placeholder="Enter your phone..">
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="form__group shipping">
+                        <h4 class="form__title">Shipping address</h4>
+                        <div class="form__group__input">
+                            <label>full name</label>
+                            <p class="input__block">
+                                <i class="material-icons">account_circle</i>
+                                <input type="text" name="fullname" id="fullname" required placeholder="Rodney Cotton">
+                            </p>
+                        </div>
+                        <div class="form__group__input">
+                            <label>adress</label>
+                            <p class="input__block">
+                                <i class="material-icons">home</i>
+                                <input type="text" name="address" id="address" required placeholder="Your address..">
+                            </p>
+                        </div>
+                        <div class="form__group__input">
+                            <label>city</label>
+                            <p class="input__block">
+                                <i class="material-icons">location_city</i>
+                                <input type="text" name="city" id="city" required placeholder="Your city..">
+                            </p>
+                        </div>
+                        <div class="form--display">
+                            <div class="form__group__input input--size">
+                                <label>country</label>
+                                <p class="select__block">
+                                    <i class="material-icons select__icon">public</i>
+                                    <select name="country" id="country">
+                                        <option value="">Your country..</option>
+                                        <option value="usa">usa</option>
+                                        <option value="england">england</option>
+                                        <option value="south africa">south africa</option>
+                                        <option value="ghana">ghana</option>
+                                        <option value="cote d'ivoire">Côte d'ivoire</option>
+                                    </select>
+                                    <i class="material-icons material">keyboard_arrow_down</i>
+                                </p>
+                            </div>
+                            <div class="form__group__input input--size">
+                                <label>postal code</label>
+                                <p class="input__block">
+                                    <i class="material-icons">markunread_mailbox</i>
+                                    <input type="text" name="city" id="city" required placeholder="Your postal code..">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form__group__input">
+                            <p class="input__checkbox input--no-border">
+                                <input class="input__checkbox" type="checkbox" value="saveit">
+                                <label for="saveit" class="checkbox__label">save this information for next time</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form__submitted">
+                        <input type="submit" value="continue" class="submit__btn">
+                    </div>
+                </form>
+            </div>
+    </section>
+</body>
+</html>
