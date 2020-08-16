@@ -250,7 +250,27 @@ select{
     color: #333333;
 }
 
+/* Footer */
+footer.footer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 70px 0;
+    color: #A9A9A9;
+}
 
+.footer__paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #A9A9A9;
+}
 
 /* Responsive */
 /* Great devices (portrait tablets and computer, 1200px and up) */
