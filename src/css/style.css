@@ -41,6 +41,9 @@ input, select{
     line-height: 15px;
     color: #828282;
 }
+input:hover, input:focus, select:hover, select:focus{
+    outline: transparent;
+}
 .input__block {
     position: relative;
 }
